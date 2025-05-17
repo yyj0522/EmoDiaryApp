@@ -1,0 +1,36 @@
+# ==========================================
+# 📦 Android Studio Project Git Ignore
+# ==========================================
+
+# 🔧 Gradle
+.gradle/
+local.properties
+
+# 📁 Android Studio
+*.iml
+.idea/
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# 🛠️ Build Outputs
+/build/
+/captures/
+/.externalNativeBuild/
+/.cxx/
+
+# 💻 OS Files
+.DS_Store
+Thumbs.db
+
+# 📜 Logs
+*.log
+
+# ☕ Compiled Java/Kotlin
+*.class
+*.jar
+*.war
+*.ear

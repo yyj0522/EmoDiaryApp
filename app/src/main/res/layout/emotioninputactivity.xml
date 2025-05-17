@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_beige"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <Button
+            android:id="@+id/btn_to_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/nanum_pen"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="12dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="12dp"
+            android:text="&lt;"
+            android:textColor="#5E412F"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_pen"
+            android:text="오늘의 감정을 선택해주세요"
+            android:textColor="#5E412F"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/emotion_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:columnCount="3">
+
+        <Button
+            android:id="@+id/emotion_happy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/nanum_pen"
+            android:text="😄"
+            android:textColor="@color/button_text" />
+
+        <Button
+            android:id="@+id/emotion_sad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/nanum_pen"
+            android:text="😢"
+            android:textColor="@color/button_text" />
+
+        <Button
+            android:id="@+id/emotion_angry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/nanum_pen"
+            android:text="😡"
+            android:textColor="@color/button_text" />
+
+        <Button
+            android:id="@+id/emotion_scared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/nanum_pen"
+            android:text="😨"
+            android:textColor="@color/button_text" />
+
+        <Button
+            android:id="@+id/emotion_love"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/nanum_pen"
+            android:text="😍"
+            android:textColor="@color/button_text" />
+
+        <Button
+            android:id="@+id/emotion_neutral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="6dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/nanum_pen"
+            android:text="😐"
+            android:textColor="@color/button_text" />
+    </GridLayout>
+
+    <EditText
+        android:id="@+id/edit_reason"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="sans-serif"
+        android:gravity="top"
+        android:hint="감정의 이유를 입력하세요"
+        android:minLines="22"
+        android:padding="12dp"
+        android:textColorHint="#8B7E74"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/nanum_pen"
+        android:text="저장하기"
+        android:textColor="@color/button_text" />
+</LinearLayout>
