@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -71,5 +72,13 @@ public class EmotionDatabase extends SQLiteOpenHelper {
         }
         cursor.close();
         return stats;
+    }
+
+    public boolean deleteDiary(String datetime, String emotion, String reason) {
+        SQLiteDatabase db = getWritableDatabase();
+        String whereClause = "datetime = ? AND emotion = ? AND reason = ?";
+        String[] whereArgs = new String[]{datetime, emotion, reason};
+        int deletedRows = db.delete(TABLE_NAME, whereClause, whereArgs);
+        return deletedRows > 0;
     }
 }
