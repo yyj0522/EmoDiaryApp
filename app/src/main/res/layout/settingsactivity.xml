@@ -59,13 +59,4 @@
         android:text="데이터 백업"
         android:textColor="@color/button_text" />
 
-    <Button
-        android:id="@+id/btn_alarm"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_button"
-        android:fontFamily="@font/nanum_pen"
-        android:text="알림 설정"
-        android:textColor="@color/button_text" />
-
 </LinearLayout>
