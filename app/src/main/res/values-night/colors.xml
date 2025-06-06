@@ -5,4 +5,7 @@
     <color name="button_text">#E0E0E0</color>
 
     <color name="background">#121212</color>
+
+    <color name="edittext_bg">#333333</color>
+    <color name="edittext_text">#FFFFFF</color>
 </resources>

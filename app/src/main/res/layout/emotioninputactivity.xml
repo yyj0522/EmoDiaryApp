@@ -114,12 +114,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/edittext_background"
-        android:backgroundTint="#FFFFFF"
+        android:backgroundTint="@color/edittext_bg"
         android:fontFamily="sans-serif"
         android:gravity="top"
         android:hint="감정의 이유를 입력하세요"
         android:minLines="22"
         android:padding="12dp"
+        android:textColor="@color/edittext_text"
         android:textColorHint="#8B7E74"
         android:textSize="16sp" />
 

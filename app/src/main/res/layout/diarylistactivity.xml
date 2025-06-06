@@ -2,11 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background_beige"
+    android:background="@color/background"
     android:orientation="vertical"
     android:padding="16dp">
 
-    <!-- 상단 버튼 + 검색창을 가로배치 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,7 +53,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="#FFF8F0"
+        android:background="@color/background"
         android:divider="#A67C52"
         android:dividerHeight="1dp"
         android:paddingTop="12dp"
